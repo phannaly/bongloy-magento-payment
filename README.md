@@ -1,4 +1,4 @@
-# Magento 2 Stripe Integration
+# Magento 2 Bongloy Integration
 
 [![Build Status](https://travis-ci.org/pmclain/module-stripe.svg?branch=master)](https://travis-ci.org/pmclain/module-stripe)
 [![Coverage Status](https://coveralls.io/repos/github/pmclain/module-stripe/badge.svg?branch=master)](https://coveralls.io/github/pmclain/module-stripe?branch=master)
@@ -6,7 +6,7 @@
 [![Total Downloads](https://poser.pugx.org/pmclain/module-stripe/downloads)](https://packagist.org/packages/pmclain/module-stripe)
 [![License](https://poser.pugx.org/pmclain/module-stripe/license)](https://packagist.org/packages/pmclain/module-stripe)
 
-Accept credit card payments through the Stripe payment gateway.
+Accept credit card payments through the Bongloy payment gateway.
 
 * Supports Magento Instant Purchase for One Click Checkout
 * Securely accept customer payments using the Stripe.js tokenization when
@@ -25,7 +25,7 @@ corresponding Stripe customer profile.
 ## Installation
 #### Composer
 In your Magento 2 root directory run  
-`composer require pmclain/module-stripe`  
+`composer require phannaly/bongloy-magento-payment`
 `bin/magento setup:upgrade`  
 
 ## Magento Version Requirements
