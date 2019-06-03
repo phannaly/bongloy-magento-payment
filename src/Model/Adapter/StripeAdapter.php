@@ -44,6 +44,7 @@ class StripeAdapter
 
     protected function initCredentials()
     {
+        Stripe::$apiBase = "https://api.bongloy.com";
         Stripe::setApiKey($this->config->getSecretKey());
     }
 
