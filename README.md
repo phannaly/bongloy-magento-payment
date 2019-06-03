@@ -26,6 +26,7 @@ corresponding Stripe customer profile.
 #### Composer
 In your Magento 2 root directory run  
 `composer require phannaly/bongloy-magento-payment`
+
 `bin/magento setup:upgrade`  
 
 ## Magento Version Requirements
@@ -38,7 +39,9 @@ In your Magento 2 root directory run
 
 ## Configuration
 The configuration can be found in the Magento 2 admin panel under  
-Store->Configuration->Sales->Payment Methods->Stripe
+Store->Configuration->Sales->Payment Methods->Bongloy
+
+Insert title payment inside `Title` like `Bonloy Payment` so user will see it on the checkout page
 
 ## Feature Roadmap
 There is no ETA for implementation, but here is the list in order of priority.
