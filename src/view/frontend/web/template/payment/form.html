@@ -17,9 +17,28 @@
     </div>
 
     <form class="form" data-bind="attr: {'id': getCode() + '-form'}">
-      <div id="stripe-card-element" afterRender="initStripeElement">
-        <!-- a Stripe Element will be inserted here. -->
-      </div>
+       <div class="form-group hidden new_charge_token">
+          <div class="input-group"><input class="form-control hidden" data-name="cardToken" type="hidden" name="new_charge[token]" id="new_charge_token"></div>
+       </div>
+       <div class="form-group tel required new_charge_card_number">
+          <div class="input-group">
+             <div class="input-group-prepend"><span class="input-group-text"><i id="card-brand-icon" class="pf pf-credit-card"></i></span></div>
+             <input class="form-control string tel required" data-name="cardNumber" data-target="card-brand-icon" placeholder="Card Number" type="tel" autocomplete="off" id="cardNumber">
+          </div>
+       </div>
+       <div class="row">
+          <div class="col">
+             <div class="form-group tel required new_charge_expiry">
+                <div class="input-group"><input class="form-control string tel required" data-name="cardExpiry" placeholder="Expiry" type="tel" autocomplete="off"></div>
+             </div>
+          </div>
+          <div class="col">
+             <div class="form-group tel required new_charge_cvc">
+                <div class="input-group"><input class="form-control string tel required" data-name="cardCVC" maxlength="3" placeholder="CVC" type="tel" data-fillr="bound" autocomplete="off"></div>
+             </div>
+          </div>
+       </div>
+
       <!-- ko if: (isVaultEnabled())-->
       <div class="field choice">
         <input type="checkbox"

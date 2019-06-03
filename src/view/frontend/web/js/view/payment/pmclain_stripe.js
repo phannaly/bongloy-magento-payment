@@ -11,7 +11,7 @@ define(
     rendererList.push(
       {
         type: 'pmclain_stripe',
-        component: 'Pmclain_Stripe/js/view/payment/method-renderer/pmclain_stripe'
+        component: 'Pmclain_Stripe/js/view/payment/method-renderer/bongloy'
       }
     );
     /** Add view logic here if needed */
