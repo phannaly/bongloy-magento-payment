@@ -122,7 +122,6 @@ define(
       _placeOrder: function() {
         var self = this,
           placeOrder = placeOrderAction(self.getData(), self.messageContainer);
-        console.log(self.getData(), self.messageContainer)
 
         $.when(placeOrder).done(function() {
           if (self.redirectAfterPlaceOrder) {
@@ -277,8 +276,6 @@ define(
         data.additional_data.cc_last4 = card.last4;
         data.additional_data.cc_type = card.brand;
         data.additional_data.cc_token = this.token.id;
-
-        console.log("token data", data)
 
         return data;
       },

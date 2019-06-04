@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/pmclain/module-stripe.svg?branch=master)](https://travis-ci.org/pmclain/module-stripe)
 [![Coverage Status](https://coveralls.io/repos/github/pmclain/module-stripe/badge.svg?branch=master)](https://coveralls.io/github/pmclain/module-stripe?branch=master)
-[![Latest Stable Version](https://poser.pugx.org/pmclain/module-:q/v/stable)](https://packagist.org/packages/pmclain/module-stripe)
 [![Total Downloads](https://poser.pugx.org/pmclain/module-stripe/downloads)](https://packagist.org/packages/pmclain/module-stripe)
 [![License](https://poser.pugx.org/pmclain/module-stripe/license)](https://packagist.org/packages/pmclain/module-stripe)
 
@@ -42,7 +41,8 @@ In your Magento 2 root directory run
 The configuration can be found in the Magento 2 admin panel under  
 Store->Configuration->Sales->Payment Methods->Bongloy
 
-Enter your Bongloy account credentials (*secret key and publishable key*) and select **Accepted Currency**
+Enter your Bongloy account credentials (*secret key and publishable key*), select **Accepted Currency**
+and then enter **Title** (*Bongloy Credit Card*) so user will see and can select it as payment option in checkout page.
 
 
 ## Testing and Local Development
